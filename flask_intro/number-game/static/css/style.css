@@ -1,0 +1,21 @@
+h1, h2, h5{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.wrong{
+    color: white;
+    background-color: red;
+}
+.correct{
+    color: white;
+    background-color: greenyellow;
+}
+
+#low.high{
+    display: none;
+}
+#high.low{
+    display: none;
+}

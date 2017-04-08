@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Welcome</h1>
+        <h5>Guess a number between 1 and 100...</h5>
+        <div class="{{ visibility }}">
+            <h2>Correct!</h2>
+            <h5>Play again?</h5>
+        </div>
+        <div>
+            <h2 class="{{hint}}" id="high">Too high</h2>
+            <h3 class="{{hint}}" id="low">Too low</h3>
+        </div>
+        
+        <form action="/check" method="post">
+            <input type="text" name="guess" value="">
+            <input type="submit" name="button" value="Guess">
+        </form>
+        <form class="{{visibility}}" method="post" action="/reset">
+            <input type="submit" name="button" value="Play again">
+        </form>
+        
+    </body>
+</html>

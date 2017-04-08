@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="{{url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+        <script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>-->
+    </head>
+    <body>
+        {% if variable == "blue"  %}
+        <img src="{{url_for('static', filename='imgs/leonardo.jpg')}}">
+        
+
+        {% elif variable == "purple"  %}
+        <img src="{{url_for('static', filename='imgs/donatello.jpg')}}">
+        
+
+        {% elif variable == "orange"  %}
+        <img src="{{url_for('static', filename='imgs/michelangelo.jpg')}}">
+        
+
+        {% elif variable == "red"  %}
+        <img src="{{url_for('static', filename='imgs/raphael.jpg')}}">
+        
+
+        {% elif variable == "ninja" %}
+        <img src="{{url_for('static', filename='imgs/tmnt.png')}}">
+        
+
+        {% else %}
+        <img src="{{url_for('static', filename='imgs/notapril.jpg')}}">
+        {% endif %}
+    </body>
+</html>

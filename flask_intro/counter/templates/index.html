@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1{text-align: center;}
+            div{margin-left: 675px}
+            form{display: inline-block};
+
+        </style>
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <h1>{{ session['count'] }}</h1>
+        <div>
+            <form action="two">
+                <input type="submit" value="+2">
+            </form>
+            <form action="reset">
+                <input type="submit" value="reset">
+            </form>
+        </div>
+    </body>
+</html>
